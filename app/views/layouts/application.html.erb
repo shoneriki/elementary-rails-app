@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ElementaryRailsApp</title>
+    <title>ElementaryRails</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <div style="background: black; padding: 16px">
+      <ul>
+        <li><%= link_to "Learn about us", about_path %></li>
+        <li><%= link_to "Contact us", contact_path %></li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>

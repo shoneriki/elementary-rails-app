@@ -1,1 +1,10 @@
 <h1>Contact Page</h1>
+
+<ul>
+  <% @members.each do |key, value| %>
+    <h1>Name: <%= key %></h1>
+    <% value.each do |k, v| %>
+      <li><%= v %></li>
+    <% end %>
+  <% end %>
+</ul>

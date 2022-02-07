@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get '/about', to: "pages#about"
-  get '/contact' to: "pages#contact"
+  # add as: :about_us to change the path for er
+  get '/contact', to: "pages#contact"
 
 end
